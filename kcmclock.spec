@@ -64,7 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 - added %clean section,
 - spec rewrited for using Buildroot,
 - added using %%{name} and %%{version} macros in Source,
-- added %lang macros for /usr/share/locale/*/LC_MESSAGES/ files.
+- added %lang macros for %{_datadir}/locale/*/LC_MESSAGES/ files.
 
 * Tue Jun  2 1998 Juergen Helmers <helmerj@rockvax.rockefeller.edu>
   [0.1-1]
