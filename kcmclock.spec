@@ -29,7 +29,7 @@ CFLAGS="$RPM_OPT_FLAGS -Wall" CXXFLAGS="$RPM_OPT_FLAGS -Wall" \
 QTINC=%{_prefix}/include/qt \
 ./configure %{_target_platform} \
 	--prefix=%{_prefix}
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
