@@ -12,8 +12,6 @@ URL:		http://library.cs.tuiasi.ro/kde/apps/kcmclock/
 BuildRequires:	kdelibs-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
 
 %description
 A kcontrol module that allow you to change the Date & Time of your
