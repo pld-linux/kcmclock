@@ -7,6 +7,7 @@ Vendor:		Luca Montecchiani <[1]m.luca@usa.net>
 License:	GPL
 Group:		X11/Applications
 Source0:	%{name}-%{version}.tgz
+# Source0-md5:	7aa132a9c54dd4063a5a22bc2c3b3578
 #Source0:	http://www.geocities.com/SiliconValley/Vista/2964/kcmclock.tgz
 URL:		http://library.cs.tuiasi.ro/kde/apps/kcmclock/
 BuildRequires:	kdelibs-devel
