@@ -1,11 +1,11 @@
-Summary:     A kcontrol modules to change the Date & Time of your system
-Summary(pl): Modu³ kontrolny do zmieniania daty i czau systemowego
-Name:        kcmclock
-Version:     0.1
-Release:     3
-Copyright:   GPL
-Source:      %{name}-%{version}.tgz
-Group:       X11/KDE
+Summary:	A kcontrol modules to change the Date & Time of your system
+Summary(pl):	Modu³ kontrolny do zmieniania daty i czau systemowego
+Name:		kcmclock
+Version:	0.1
+Release:	3
+Copyright:	GPL
+Source:		%{name}-%{version}.tgz
+Group:		X11/KDE
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
