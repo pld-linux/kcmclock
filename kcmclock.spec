@@ -20,7 +20,7 @@ Copyright (C) 1998 Luca Montecchiani <[1]m.luca@usa.net>
 %build
 CFLAGS="$RPM_OPT_FLAGS -Wall" CXXFLAGS="$RPM_OPT_FLAGS -Wall" \
 QTINC=/usr/X11R6/include/qt \
-./configure \
+./configure %{_target} \
 	--prefix=/usr/X11R6
 make
 
