@@ -6,7 +6,7 @@ Release:     3
 Copyright:   GPL
 Source:      %{name}-%{version}.tgz
 Group:       X11/KDE
-Buildroot:   /tmp/%{name}-%{version}-root
+BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
 A kcontrol module that allow you to change the Date & Time of your Linux Box
