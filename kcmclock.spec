@@ -14,6 +14,9 @@ A kcontrol module that allow you to change the Date & Time of your Linux Box
 
 Copyright (C) 1998 Luca Montecchiani <[1]m.luca@usa.net>
 
+%description -l pl
+Modu³ dla kcontrol pozwalaj±cy na zmianê Daty oraz Czasu.
+
 %prep
 %setup -q
 
