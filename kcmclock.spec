@@ -3,6 +3,7 @@ Summary(pl):	Modu³ kontrolny do zmieniania daty i czasu systemowego
 Name:		kcmclock
 Version:	0.1
 Release:	3
+Vendor:		Luca Montecchiani <[1]m.luca@usa.net>
 License:	GPL
 Group:		X11/Applications
 Source0:	%{name}-%{version}.tgz
@@ -17,8 +18,6 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 A kcontrol module that allow you to change the Date & Time of your
 Linux Box ( previously was a kclock built-in dialog ).
-
-Copyright (C) 1998 Luca Montecchiani <[1]m.luca@usa.net>
 
 %description -l pl
 Modu³ dla kcontrol pozwalaj±cy na zmianê Daty oraz Czasu.
