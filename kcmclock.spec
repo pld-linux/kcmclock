@@ -39,27 +39,3 @@ rm -rf $RPM_BUILD_ROOT
 /usr/X11R6/share/doc/HTML/default/kcontrol/kcmclock
 /usr/X11R6/share/applnk/Settings/kcmclock.kdelnk
 /usr/X11R6/share/icons/kcmclock.xpm
-
-%changelog
-* Tue Sep 15 1998 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
-  [0.1-3]
-- KDEDIR changed to /usr/X11R6,
-- qt is now placed in /usr/X11R6 also.
-
-* Mon Aug  3 1998 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
-  [0.1-2]
-- added pl translation,
-- added using $RPM_OPT_FLAGS during compilation,
-- added devel and static subpackages,
-- removed Packager field from spec (if you want recompile package and
-  redistribute this package later put this in your private .rpmrc),
-- base dir changed to /usr,
-- added -q %setup parameter,
-- added %clean section,
-- spec rewrited for using Buildroot,
-- added using %%{name} and %%{version} macros in Source,
-- added %lang macros for %{_datadir}/locale/*/LC_MESSAGES/ files.
-
-* Tue Jun  2 1998 Juergen Helmers <helmerj@rockvax.rockefeller.edu>
-  [0.1-1]
-- previouse not commented release in rpm package.
