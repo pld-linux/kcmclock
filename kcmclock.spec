@@ -6,10 +6,14 @@ Release:	3
 License:	GPL
 Group:		X11/Applications
 Group(de):	X11/Applikationen
+Group(es):	X11/Aplicaciones
 Group(pl):	X11/Aplikacje
+Group(pt_BR):	X11/Aplicações
+Group(pt):	X11/Aplicações
 Source0:	%{name}-%{version}.tgz
 #Source0:	http://www.geocities.com/SiliconValley/Vista/2964/kcmclock.tgz
 URL:		http://library.cs.tuiasi.ro/kde/apps/kcmclock/
+BuildRequires:	kdelibs-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
