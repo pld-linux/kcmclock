@@ -3,14 +3,18 @@ Summary(pl):	Modu³ kontrolny do zmieniania daty i czau systemowego
 Name:		kcmclock
 Version:	0.1
 Release:	3
-Copyright:	GPL
-Source:		%{name}-%{version}.tgz
+License:	GPL
+Source0:	%{name}-%{version}.tgz
 Group:		X11/KDE
+Group(pl):	X11/KDE
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%define		_prefix		/usr/X11R6
+%define		_mandir		%{_prefix}/man
+
 %description
-A kcontrol module that allow you to change the Date & Time of your Linux Box
-( previously was a kclock built-in dialog ).
+A kcontrol module that allow you to change the Date & Time of your
+Linux Box ( previously was a kclock built-in dialog ).
 
 Copyright (C) 1998 Luca Montecchiani <[1]m.luca@usa.net>
 
@@ -22,14 +26,14 @@ Modu³ dla kcontrol pozwalaj±cy na zmianê Daty oraz Czasu.
 
 %build
 CFLAGS="$RPM_OPT_FLAGS -Wall" CXXFLAGS="$RPM_OPT_FLAGS -Wall" \
-QTINC=/usr/X11R6/include/qt \
+QTINC=%{_prefix}/include/qt \
 ./configure %{_target_platform} \
-	--prefix=/usr/X11R6
+	--prefix=%{_prefix}
 make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-make install prefix=$RPM_BUILD_ROOT/usr/X11R6
+make install prefix=$RPM_BUILD_ROOT%{_prefix}
 
 %find_lang %{name}
 
@@ -38,7 +42,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%attr(755,root,root) /usr/X11R6/bin/*
-/usr/X11R6/share/doc/HTML/default/kcontrol/kcmclock
-/usr/X11R6/share/applnk/Settings/kcmclock.kdelnk
-/usr/X11R6/share/icons/kcmclock.xpm
+%attr(755,root,root) %{_prefix}/bin/*
+%{_prefix}/share/doc/HTML/default/kcontrol/kcmclock
+%{_applnkdir}/Settings/kcmclock.kdelnk
+%{_prefix}/share/icons/kcmclock.xpm
