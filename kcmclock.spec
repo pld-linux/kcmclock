@@ -28,23 +28,17 @@ make
 rm -rf $RPM_BUILD_ROOT
 make install prefix=$RPM_BUILD_ROOT/usr/X11R6
 
+%find_lang %{name}
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
+%files -f %{name}.lang
 %defattr(644,root,root,755)
 %attr(755,root,root) /usr/X11R6/bin/*
 /usr/X11R6/share/doc/HTML/default/kcontrol/kcmclock
 /usr/X11R6/share/applnk/Settings/kcmclock.kdelnk
 /usr/X11R6/share/icons/kcmclock.xpm
-%lang(de) /usr/X11R6/share/locale/de/LC_MESSAGES/kcmclock.mo
-%lang(es) /usr/X11R6/share/locale/es/LC_MESSAGES/kcmclock.mo
-%lang(hr) /usr/X11R6/share/locale/hr/LC_MESSAGES/kcmclock.mo
-%lang(it) /usr/X11R6/share/locale/it/LC_MESSAGES/kcmclock.mo
-%lang(nl) /usr/X11R6/share/locale/nl/LC_MESSAGES/kcmclock.mo
-%lang(nl) /usr/X11R6/share/locale/pt/LC_MESSAGES/kcmclock.mo
-%lang(pt) /usr/X11R6/share/locale/ro/LC_MESSAGES/kcmclock.mo
-%lang(sk) /usr/X11R6/share/locale/sk/LC_MESSAGES/kcmclock.mo
 
 %changelog
 * Tue Sep 15 1998 Tomasz K³oczko <kloczek@rudy.mif.pg.gda.pl>
