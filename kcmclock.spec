@@ -32,8 +32,8 @@ make install prefix=$RPM_BUILD_ROOT/usr/X11R6
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(644, root, root, 755)
-%attr(755, root, root) /usr/X11R6/bin/*
+%defattr(644,root,root,755)
+%attr(755,root,root) /usr/X11R6/bin/*
 /usr/X11R6/share/doc/HTML/default/kcontrol/kcmclock
 /usr/X11R6/share/applnk/Settings/kcmclock.kdelnk
 /usr/X11R6/share/icons/kcmclock.xpm
