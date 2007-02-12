@@ -1,5 +1,5 @@
 Summary:	A kcontrol modules to change the Date & Time of your system
-Summary(pl):	Modu³ kontrolny do zmieniania daty i czasu systemowego
+Summary(pl.UTF-8):   ModuÅ‚ kontrolny do zmieniania daty i czasu systemowego
 Name:		kcmclock
 Version:	0.1
 Release:	3
@@ -19,8 +19,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 A kcontrol module that allow you to change the Date & Time of your
 Linux Box ( previously was a kclock built-in dialog ).
 
-%description -l pl
-Modu³ dla kcontrol pozwalaj±cy na zmianê Daty oraz Czasu.
+%description -l pl.UTF-8
+ModuÅ‚ dla kcontrol pozwalajÄ…cy na zmianÄ™ Daty oraz Czasu.
 
 %prep
 %setup -q
