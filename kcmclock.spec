@@ -1,5 +1,5 @@
 Summary:	A kcontrol modules to change the Date & Time of your system
-Summary(pl.UTF-8):   Moduł kontrolny do zmieniania daty i czasu systemowego
+Summary(pl.UTF-8):	Moduł kontrolny do zmieniania daty i czasu systemowego
 Name:		kcmclock
 Version:	0.1
 Release:	3
